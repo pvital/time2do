@@ -1,6 +1,0 @@
-20071113 by pvital
-    - fixed a little bug when the message was bigger then 23 characteres
-    - started the part to include images in the messages boxes
-20070404 by pvital
-    - added control to display a msg using argc and argv
-#EOF
