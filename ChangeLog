@@ -1,6 +1,23 @@
+CHANGELOG
+=========
+
+#### [Current] ####
+
+
+#### [v0.1.1] ####
+ * [9967d87] Add VERSION and build-aux files.                     (Paulo Vital)
+ * [aa717fb] Rebuilding README file.                              (Paulo Vital)
+ * [a3f922c] Fixing code structure and removing old SVN files.    (Paulo Vital)
+ * [c9dc064] Removing old Anjuta and unnecessary files.           (Paulo Vital)
+ * [caf9dc5] Adding README file                                   (Paulo Vital)
+ * [9e0cfc3] First commit                                         (Paulo Vital)
+
+#### [SVN-era in Google Code] ####
+
 20071113 by pvital
     - fixed a little bug when the message was bigger then 23 characteres
     - started the part to include images in the messages boxes
 20070404 by pvital
     - added control to display a msg using argc and argv
+
 #EOF
