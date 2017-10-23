@@ -30,10 +30,10 @@
 # the same distribution terms that you use for the rest of that program.
 
 # A sed program that does not truncate output.
-SED="/bin/sed"
+SED="/usr/bin/sed"
 
 # Sed that helps us avoid accidentally triggering echo(1) options like -n.
-Xsed="/bin/sed -e 1s/^X//"
+Xsed="/usr/bin/sed -e 1s/^X//"
 
 # The HP-UX ksh and POSIX shell print the target directory to stdout
 # if CDPATH is set.
@@ -44,7 +44,7 @@ available_tags=" CXX"
 
 # ### BEGIN LIBTOOL CONFIG
 
-# Libtool was configured on host tomcat.br.ibm.com:
+# Libtool was configured on host dhcp-9-18-239-64.br.ibm.com:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -66,12 +66,12 @@ fast_install=yes
 
 # The host system.
 host_alias=
-host=i686-pc-linux-gnu
+host=x86_64-unknown-linux-gnu
 host_os=linux-gnu
 
 # The build system.
 build_alias=
-build=i686-pc-linux-gnu
+build=x86_64-unknown-linux-gnu
 build_os=linux-gnu
 
 # An echo program that does not interpret backslashes.
@@ -94,10 +94,10 @@ CC="gcc"
 with_gcc=yes
 
 # An ERE matcher.
-EGREP="/bin/grep -E"
+EGREP="/usr/bin/grep -E"
 
 # The linker used to build libraries.
-LD="/usr/bin/ld"
+LD="/usr/bin/ld -m elf_x86_64"
 
 # Whether we need hard or soft links.
 LN_S="ln -s"
@@ -171,7 +171,7 @@ dlopen_self=unknown
 dlopen_self_static=unknown
 
 # Compiler flag to prevent dynamic linking.
-link_static_flag="-static"
+link_static_flag=""
 
 # Compiler flag to turn off builtin functions.
 no_builtin_flag=" -fno-builtin"
@@ -325,10 +325,10 @@ variables_saved_for_relink="PATH LD_LIBRARY_PATH LD_RUN_PATH GCC_EXEC_PREFIX COM
 link_all_deplibs=no
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec=" /usr/lib/gcc/i486-linux-gnu/4.1.2/ /usr/lib/gcc/i486-linux-gnu/4.1.2/ /usr/lib/gcc/i486-linux-gnu/4.1.2/../../../../i486-linux-gnu/lib/i486-linux-gnu/4.1.2/ /usr/lib/gcc/i486-linux-gnu/4.1.2/../../../../i486-linux-gnu/lib/ /usr/lib/gcc/i486-linux-gnu/4.1.2/../../../i486-linux-gnu/4.1.2/ /usr/lib/gcc/i486-linux-gnu/4.1.2/../../../ /lib/i486-linux-gnu/4.1.2/ /lib/ /usr/lib/i486-linux-gnu/4.1.2/ /usr/lib/"
+sys_lib_search_path_spec=" /usr/lib/gcc/x86_64-redhat-linux/5.1.1/ /usr/lib/gcc/x86_64-redhat-linux/5.1.1/../../../../x86_64-redhat-linux/lib/x86_64-redhat-linux/5.1.1/ /usr/lib/gcc/x86_64-redhat-linux/5.1.1/../../../../x86_64-redhat-linux/lib/../lib64/ /usr/lib/gcc/x86_64-redhat-linux/5.1.1/../../../x86_64-redhat-linux/5.1.1/ /usr/lib/gcc/x86_64-redhat-linux/5.1.1/../../../../lib64/ /lib/x86_64-redhat-linux/5.1.1/ /lib/../lib64/ /usr/lib/x86_64-redhat-linux/5.1.1/ /usr/lib/../lib64/ /usr/lib/gcc/x86_64-redhat-linux/5.1.1/../../../../x86_64-redhat-linux/lib/ /usr/lib/gcc/x86_64-redhat-linux/5.1.1/../../../ /lib/ /usr/lib/"
 
 # Run-time system search path for libraries
-sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/X11R6/lib /lib/i486-linux-gnu /usr/lib/i486-linux-gnu "
+sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib/agnclient-compat /opt/agns/lib /usr/lib64/atlas /opt/BESClient/BESLib /opt/BESClient/bin /usr/lib64/bind99 /usr/lib64/iscsi /usr/lib64/llvm /usr/lib64/qt-3.3/lib "
 
 # Fix the shell variable $srcfile for the compiler.
 fix_srcfile_path=""
@@ -7223,7 +7223,7 @@ disable_libs=static
 # End:
 # ### BEGIN LIBTOOL TAG CONFIG: CXX
 
-# Libtool was configured on host tomcat.br.ibm.com:
+# Libtool was configured on host dhcp-9-18-239-64.br.ibm.com:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -7245,12 +7245,12 @@ fast_install=yes
 
 # The host system.
 host_alias=
-host=i686-pc-linux-gnu
+host=x86_64-unknown-linux-gnu
 host_os=linux-gnu
 
 # The build system.
 build_alias=
-build=i686-pc-linux-gnu
+build=x86_64-unknown-linux-gnu
 build_os=linux-gnu
 
 # An echo program that does not interpret backslashes.
@@ -7273,10 +7273,10 @@ CC="g++"
 with_gcc=yes
 
 # An ERE matcher.
-EGREP="/bin/grep -E"
+EGREP="/usr/bin/grep -E"
 
 # The linker used to build libraries.
-LD="/usr/bin/ld"
+LD="/usr/bin/ld -m elf_x86_64"
 
 # Whether we need hard or soft links.
 LN_S="ln -s"
@@ -7350,7 +7350,7 @@ dlopen_self=unknown
 dlopen_self_static=unknown
 
 # Compiler flag to prevent dynamic linking.
-link_static_flag="-static"
+link_static_flag=""
 
 # Compiler flag to turn off builtin functions.
 no_builtin_flag=" -fno-builtin"
@@ -7405,11 +7405,11 @@ striplib="strip --strip-unneeded"
 
 # Dependencies to place before the objects being linked to create a
 # shared library.
-predep_objects="/usr/lib/gcc/i486-linux-gnu/4.1.2/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.1.2/crtbeginS.o"
+predep_objects="/usr/lib/gcc/x86_64-redhat-linux/5.1.1/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/5.1.1/crtbeginS.o"
 
 # Dependencies to place after the objects being linked to create a
 # shared library.
-postdep_objects="/usr/lib/gcc/i486-linux-gnu/4.1.2/crtendS.o /usr/lib/gcc/i486-linux-gnu/4.1.2/../../../../lib/crtn.o"
+postdep_objects="/usr/lib/gcc/x86_64-redhat-linux/5.1.1/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/5.1.1/../../../../lib64/crtn.o"
 
 # Dependencies to place before the objects being linked to create a
 # shared library.
@@ -7421,7 +7421,7 @@ postdeps="-lstdc++ -lm -lgcc_s -lc -lgcc_s"
 
 # The library search path used internally by the compiler when linking
 # a shared library.
-compiler_lib_search_path="-L/usr/lib/gcc/i486-linux-gnu/4.1.2 -L/usr/lib/gcc/i486-linux-gnu/4.1.2 -L/usr/lib/gcc/i486-linux-gnu/4.1.2/../../../../lib -L/lib/../lib -L/usr/lib/../lib"
+compiler_lib_search_path="-L/usr/lib/gcc/x86_64-redhat-linux/5.1.1 -L/usr/lib/gcc/x86_64-redhat-linux/5.1.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/5.1.1/../../.."
 
 # Method to check whether dependent libraries are shared objects.
 deplibs_check_method="pass_all"
@@ -7501,10 +7501,10 @@ variables_saved_for_relink="PATH LD_LIBRARY_PATH LD_RUN_PATH GCC_EXEC_PREFIX COM
 link_all_deplibs=no
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec=" /usr/lib/gcc/i486-linux-gnu/4.1.2/ /usr/lib/gcc/i486-linux-gnu/4.1.2/ /usr/lib/gcc/i486-linux-gnu/4.1.2/../../../../i486-linux-gnu/lib/i486-linux-gnu/4.1.2/ /usr/lib/gcc/i486-linux-gnu/4.1.2/../../../../i486-linux-gnu/lib/ /usr/lib/gcc/i486-linux-gnu/4.1.2/../../../i486-linux-gnu/4.1.2/ /usr/lib/gcc/i486-linux-gnu/4.1.2/../../../ /lib/i486-linux-gnu/4.1.2/ /lib/ /usr/lib/i486-linux-gnu/4.1.2/ /usr/lib/"
+sys_lib_search_path_spec=" /usr/lib/gcc/x86_64-redhat-linux/5.1.1/ /usr/lib/gcc/x86_64-redhat-linux/5.1.1/../../../../x86_64-redhat-linux/lib/x86_64-redhat-linux/5.1.1/ /usr/lib/gcc/x86_64-redhat-linux/5.1.1/../../../../x86_64-redhat-linux/lib/../lib64/ /usr/lib/gcc/x86_64-redhat-linux/5.1.1/../../../x86_64-redhat-linux/5.1.1/ /usr/lib/gcc/x86_64-redhat-linux/5.1.1/../../../../lib64/ /lib/x86_64-redhat-linux/5.1.1/ /lib/../lib64/ /usr/lib/x86_64-redhat-linux/5.1.1/ /usr/lib/../lib64/ /usr/lib/gcc/x86_64-redhat-linux/5.1.1/../../../../x86_64-redhat-linux/lib/ /usr/lib/gcc/x86_64-redhat-linux/5.1.1/../../../ /lib/ /usr/lib/"
 
 # Run-time system search path for libraries
-sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/X11R6/lib /lib/i486-linux-gnu /usr/lib/i486-linux-gnu "
+sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib/agnclient-compat /opt/agns/lib /usr/lib64/atlas /opt/BESClient/BESLib /opt/BESClient/bin /usr/lib64/bind99 /usr/lib64/iscsi /usr/lib64/llvm /usr/lib64/qt-3.3/lib "
 
 # Fix the shell variable $srcfile for the compiler.
 fix_srcfile_path=""
